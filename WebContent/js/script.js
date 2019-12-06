@@ -1,43 +1,31 @@
 // Include truYum form validation functions here
-function validation()
-{
-    var a = document.forms.["form"]["txtName"].value;
-    if(a==""){
-        alert("Title is required.");
-        document.forms.["form"]["txtName"].focus();
-        return false;
-    }
-    if ((a.length < 2) || (a.length > 30))
-    {
-        alert("Title should have 2 to 65 characters.");
-        document.forms.["forms"]["txtName"].select();
-        return false;
-    }
-    var a = document.forms.["forms"]["txtPrice"].value;
-    if(a=="")
-    {
-        alert("Price is required.");
-        document.forms.["form"]["txtPrice"].focus();
-        return false;
-    }
-    if(/[^0-9/]/.test(b))
-    {
-        alert("Price has to be a number.");
-        document.forms.["forms"]["txtPrice"].select();
-        return false;
-    }
-    var a = document.forms.["form"]["txtDoL"].value;
-    if(a=="")
-    {
-        alert("Date of Launch is required.");
-        document.forms.["form"]["txtDoL"].focus();
-        return false;
-    }
-    var a = document.forms.["form"]["Category"].value;
-    if(a=="")
-    {
-        alert("Category is required.");
-        document.forms.["form"]["Category"].focus();
-        return false;
-    }
-}
+function validation() {
+                var a = document.forms["form"]["textName"].value;
+                if(a == "" ) {
+                                alert("Title is Required");
+                                return false;
+                             }
+                if ((a.length < 2) || (a.length > 65)) {
+                                alert("Title should have 2 to 65 characters.");
+                                return false;
+                             }
+                var b = document.forms["form"]["txtPrice"].value;
+                if(b == "" ) {
+                                alert("Price is required.");
+                                return false;
+                             }
+                if(/[^0-9/]/.test(b)) {
+                                alert("Price has to be a number.");
+                                return false;
+                             }
+                var c = document.forms["form"]["txtDoL"].value;
+                if( c == "" ){
+                                alert("Date of Launch is required.");
+                                return false;
+                             }
+                var d = document.forms["form"]["Category"].value;
+                if( d == "" ){
+                                alert("Select one category.");
+                                return false;
+                             }
+                      }
