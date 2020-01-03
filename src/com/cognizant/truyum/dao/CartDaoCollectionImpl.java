@@ -25,10 +25,10 @@ public class CartDaoCollectionImpl implements CartDao {
 			MenuItem menuItem = menuItemDao.getMenuItem(menuItemId);
 			if (userCarts.containsKey(userId)) {
 				Cart cart = userCarts.get(userId);
-				Cart.getMenuItemList().add(menuItem);
+				cart.getMenuItemList().add(menuItem);
 			} else {
 				Cart cart = new Cart();
-				Cart.getMenuItemList().add(menuItem);
+				cart.getMenuItemList().add(menuItem);
 				userCarts.put(userId, cart);
 			}
 		} catch (ParseException e) {

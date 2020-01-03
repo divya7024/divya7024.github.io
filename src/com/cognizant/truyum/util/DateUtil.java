@@ -7,14 +7,15 @@ import java.util.Date;
 public class DateUtil {
 	static SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
 
-	public static Date convertToDate(String date) throws ParseException {
-
-		Date d = sdf.parse(date);
+	public static Date convertToDate(String dateOfLaunch) throws ParseException {
+		Date d = sdf.parse(dateOfLaunch);
 		return d;
 
 	}
 
-	public static String convertToString(Date date) {
+	public static String converToString(Date date) {
 		return sdf.format(date);
+
 	}
+
 }

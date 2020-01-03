@@ -9,7 +9,7 @@ public class CartDaoCollectionImplTest {
 		
 		testAddCartItem();
 		testGetAllCartItems();
-		testRemoveCartItem();
+		//testRemoveCartItem();
 		
 	}
 
@@ -28,7 +28,8 @@ public class CartDaoCollectionImplTest {
 
 		cartDao.addCartItem(1, 1L);
 		cartDao.addCartItem(1, 4L);
-
+		cartDao.addCartItem(2, 2L);
+		cartDao.addCartItem(2, 3L);
 		List<MenuItem> menuItemListCustomer = cartDao.getAllCartItems(1);
 		System.out.println("User Added Cart List for Checkout");
 		for (MenuItem menuItem : menuItemListCustomer) {

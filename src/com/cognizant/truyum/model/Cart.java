@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Cart {
-	private static List<MenuItem> menuItemList;
+	private List<MenuItem> menuItemList;
 	private double total;
 
 	public Cart() {
@@ -29,7 +29,7 @@ public class Cart {
 		this.total = total;
 	}
 
-	public static List<MenuItem> getMenuItemList() {
+	public List<MenuItem> getMenuItemList() {
 		return menuItemList;
 	}
 
