@@ -10,7 +10,7 @@
 <body>
 	<header>
 	<span>truYum</span> <img src="./images/truyum-logo-light.png" /> 
-	<a id="menu" href="ShowCart">Cart</a> 
+	<a id="cart" href="ShowCart">Cart</a> 
 		<a id="menu" href="ShowMenuItemListCustomer">Menu</a> </header>
 	<div>
 		<h3 class="cont">MenuItems</h3>

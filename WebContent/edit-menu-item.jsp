@@ -59,7 +59,7 @@
 						<tr>
 							<td> <input type="checkbox" name="freedel" id="freedel" value="${menuItem.freeDelivery}" 
 							<c:if test="${menuItem.freeDelivery eq 'true'}"> checked="checked"</c:if>
-							<c:if test="${menuItem.freeDelivery eq 'false'}"> </c:if>/>Free Delivery</td>
+							<c:if test="${menuItem.freeDelivery eq 'false'}"> </c:if>/>freeDelivery</td>
 						</tr>
 						<tr>
 							<td  colspan="2">
