@@ -110,7 +110,7 @@ public class MenuItem {
 
 	public String toString() {
 		String details = String.format("%-20s Rs.%7.2f %-10s %-10s %-15s %-5s Edit", name, price, active ? "Yes" : "No",
-				DateUtil.convertToDate(dateOfLaunch), category, freeDelivery ? "Yes" : "No");
+				DateUtil.converToString(dateOfLaunch), category, freeDelivery ? "Yes" : "No");
 		return details;
 	}
 
